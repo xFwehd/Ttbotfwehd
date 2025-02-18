@@ -2,9 +2,14 @@ from telegram import Bot
 from telegram.ext import Updater, CommandHandler
 import time
 import threading
+from dotenv import load_dotenv
+import os
 
-# استبدل بـ Token البوت الخاص بك
-TOKEN = '7816275632:AAGRhk_SxtvnmDZY0lBJatgrjHvxjLjnVF0'
+# تحميل المتغيرات من ملف .env
+load_dotenv()
+
+# استرجاع Token البوت من المتغيرات البيئية
+TOKEN = os.getenv("TELEGRAM_TOKEN")
 
 bot = Bot(token=TOKEN)
 
