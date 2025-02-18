@@ -24,5 +24,5 @@ jobs:
 
       - name: Deploy to Render
         run: |
-          git remote add render https://git@github.com/<your-github-username>/<your-repository>.git
+          git remote add render https://github.com/xFwehd/your-repository.git  # استبدل هذا بالرابط الصحيح
           git push render main
